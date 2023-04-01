@@ -25,6 +25,36 @@ class _UserTransactionsState extends State<UserTransactions> {
       amount: 99.99,
       date: DateTime.now(),
     ),
+    Transaction(
+      id: 't3',
+      title: 'New Shoes',
+      amount: 69.99,
+      date: DateTime.now(),
+    ),
+    Transaction(
+      id: 't4',
+      title: 'Weekly Expense',
+      amount: 99.99,
+      date: DateTime.now(),
+    ),
+    Transaction(
+      id: 't5',
+      title: 'New Shoes',
+      amount: 69.99,
+      date: DateTime.now(),
+    ),
+    Transaction(
+      id: 't6',
+      title: 'Weekly Expense',
+      amount: 99.99,
+      date: DateTime.now(),
+    ),
+    Transaction(
+      id: 't7',
+      title: 'Weekly Expense',
+      amount: 99.99,
+      date: DateTime.now(),
+    ),
   ];
 
   void _addTransaction(String txTitle, double txAmount) {
