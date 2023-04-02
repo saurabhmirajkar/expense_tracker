@@ -5,13 +5,11 @@ import 'package:intl/intl.dart';
 class TransactionList extends StatelessWidget {
   final List<Transaction> userTransactions;
 
-  TransactionList(
-    this.userTransactions,
-  );
+  const TransactionList(this.userTransactions, {super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 300,
       child: ListView.builder(
         itemCount: userTransactions.length,
