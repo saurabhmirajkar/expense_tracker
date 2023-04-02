@@ -32,7 +32,7 @@ class TransactionList extends StatelessWidget {
                     ),
                   ),
                   child: Text(
-                    '\$${userTransactions[index].amount}',
+                    '\$${userTransactions[index].amount.toStringAsFixed(2)}',
                     // ignore: prefer_const_constructors
                     style: TextStyle(
                       fontWeight: FontWeight.bold,

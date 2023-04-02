@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../models/transaction.dart';
 import './new_transaction.dart';
 import './transaction_list.dart';
+import '../models/transaction.dart';
 
 class UserTransactions extends StatefulWidget {
   const UserTransactions({super.key});
@@ -21,36 +21,6 @@ class _UserTransactionsState extends State<UserTransactions> {
     ),
     Transaction(
       id: 't2',
-      title: 'Weekly Expense',
-      amount: 99.99,
-      date: DateTime.now(),
-    ),
-    Transaction(
-      id: 't3',
-      title: 'New Shoes',
-      amount: 69.99,
-      date: DateTime.now(),
-    ),
-    Transaction(
-      id: 't4',
-      title: 'Weekly Expense',
-      amount: 99.99,
-      date: DateTime.now(),
-    ),
-    Transaction(
-      id: 't5',
-      title: 'New Shoes',
-      amount: 69.99,
-      date: DateTime.now(),
-    ),
-    Transaction(
-      id: 't6',
-      title: 'Weekly Expense',
-      amount: 99.99,
-      date: DateTime.now(),
-    ),
-    Transaction(
-      id: 't7',
       title: 'Weekly Expense',
       amount: 99.99,
       date: DateTime.now(),

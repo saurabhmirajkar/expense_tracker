@@ -1,5 +1,4 @@
 import 'package:expense_tracker/widgets/user_transactions.dart';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,21 +10,30 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: MyHomepage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
 
 // ignore: must_be_immutable
 class MyHomepage extends StatelessWidget {
-  MyHomepage({super.key});
+  const MyHomepage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Expense Tracker'),
+        actions: [
+          IconButton(
+            onPressed: () {
+              print('add button tapped!');
+            },
+            icon: Icon(Icons.add),
+          ),
+        ],
       ),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -34,16 +42,23 @@ class MyHomepage extends StatelessWidget {
             children: [
               Container(
                 width: double.infinity,
-                child: Card(
+                child: const Card(
                   color: Colors.blue,
                   elevation: 5,
                   child: Text('Chart'),
                 ),
               ),
-              UserTransactions(),
+              const UserTransactions(),
             ],
           ),
         ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          print('add button tapped!');
+        },
+        child: Icon(Icons.add),
       ),
     );
   }
