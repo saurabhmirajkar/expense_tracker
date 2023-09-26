@@ -14,7 +14,8 @@ class _ExpensesState extends State<Expenses> {
     return const Scaffold(
       body: Column(
         children: [
-          Text('this is expense page'),
+          Text('chart here'),
+          Text('expenses list here..'),
         ],
       ),
     );
