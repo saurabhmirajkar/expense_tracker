@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:uuid/uuid.dart';
 
 const uuid = Uuid();
@@ -13,7 +15,7 @@ class Expense {
   }) : id = uuid.v4();
 
   final String id;
-  final String amount;
+  final double amount;
   final String title;
   final DateTime date;
   final Category category;
