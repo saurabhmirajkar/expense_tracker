@@ -55,7 +55,7 @@ void main() => runApp(
                 ),
               ),
         ),
-        // themeMode: ThemeMode.dark,
+        themeMode: ThemeMode.dark,
         home: const Expenses(),
       ),
     );
